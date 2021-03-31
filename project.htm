@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>
+            Details
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="load()">
+        <script src="script.js"></script>
+        <!--<div>
+            <h2>Details Form</h2>
+            <br>
+            <hr>
+            <label for="name">Name:- </label>
+            <input type="text" placeholder="Enter your Name" class="input" /><br>
+            <label for="number">Mob. No:- </label>
+            <input type="number" placeholder="Enter your Mobile Number" class="input" /><br>
+            <label for="email">Email ID:- </label>
+            <input type="text" placeholder="Enter your Email ID" class="input" /><br>
+            <br>
+            <button type="submit">Submit</button>
+        </div>--><br><br><br><br>
+        <div class="container">
+                <center><h2>Details Form</h2></center>
+                <hr>
+                <form onsubmit="return false">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name.." onblur="namecheck()" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="number">Mob. No. :</label>
+              </div>
+              <div class="col-75">
+                <input type="number" id="number" name="number" placeholder="Enter Your Number..." onblur="numberCheck()" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email ID:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Enter Your Email ID..." onblur="ValidateEmail(document.email)" required><br><br>
+              </div>
+            </div>
+            <div class="row">
+              <center><span onclick="required()"><input type="submit" value="SUBMIT"></span></center>
+            </div></form>
+            <hr>
+            <div id="search">
+              <div class="row">
+                <form onsubmit="return false">
+                <div class="col-75">
+                    <input type="text" name="search" placeholder="Search.." id="searchtext">
+                </div>
+                <div class="col-25">
+                  <center><input type="submit" value="Search" id="searchbtn"></center><br><br>
+                </div>
+              </form>
+              </div>
+            </div>
+            <div id="show">
+                <div class="row">
+                    <div class="col-25">
+                        Name
+                    </div>
+                    <div class="col-25">
+                        Mob. No.
+                    </div>
+                    <div class="col-25">
+                        Email ID
+                    </div>
+                    <div class="col-25"></div>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
